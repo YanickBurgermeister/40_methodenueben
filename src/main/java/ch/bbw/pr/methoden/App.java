@@ -5,7 +5,7 @@ package ch.bbw.pr.methoden;
  * @author Peter Rutschmann
  * @version 03.01.2022
  */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
@@ -21,11 +21,18 @@ public class App
         //Vertiefungsübung Methoden Teil 2
         // Aufruf der Methoden zur Klasse Auto
         System.out.println( "\nVertiefungsübung Methoden Teil 2" );
+        Auto myAuto = new Auto();
+        int ps = myAuto.changeKilowattToPS(3443);
+
 
 
         //Vertiefungsübung Methoden Teil 3
         // Aufruf der Methoden zur Klasse Menschen
         System.out.println( "\nVertiefungsübung Methoden Teil 3" );
+        Menschen mensch = new Menschen();
+        mensch.getNamePlusAlter("Paul", 15);
+        mensch.bevoelkerungsAnteil(15000, 0.5);
+        mensch.ausbreitung(500, true);
 
     }
 }
